@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- <script type="text/javascript" src="script.js"></script> -->
+    
+    <title>Pizza Zone</title>
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+ 
+    <header>
+        <h1>Pizza&nbsp;<i class="fas fa-pizza-slice"></i>&nbsp;Zone</h1>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="login.html">Login</a></li>
+            <div class="bx bx-moon" id="darkmode"></div>
+        </ul>
+    </header>
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>Pizza Taste</h1>
+            <h2>The tasty pizza of <br> your choice</h2>
+            <a href="#menu" class="btn">View Menu</a>
+        </div>
+        <div class="home-img">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80.png" alt="">
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395__480.jpg" alt="">
+        </div>
+        <div class="about-text">
+            <span>About Us</span>
+            <h2>We make good and <br> tasty pizzas</h2>
+            <p>Using only the freshest ingredients and time-tested recipes, our pizzas are crafted with care and attention to detail. From classic favorites to unique creations, there's something for everyone on our menu.
+
+                We take pride in our prompt and reliable delivery service, ensuring that your pizza arrives hot and fresh every time. Plus, with our commitment to exceptional customer service, your satisfaction is always our top priority.
+                
+                Join us in our love for pizza and let us bring a slice of happiness to your day. Order now and experience the taste of [Your Pizza Delivery Service]!
+                
+                </p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <div class="heading">
+            <span>Menu</span>
+            <h2>Tasty menu of the day</h2>
+        </div>
+        <div class="menu-container">
+            <div class="box">
+                <div class="box-img" id="item1">
+                    <img src="pizza3.jpg" alt="">
+                </div>
+                <h2>Cheese Pizza</h2>
+                <h3><button onclick="addToCart('pizza3.jpg', 'Cheese Pizza', 100)">Add to Cart</button></h3>
+                <span>Rs.100</span>
+                <i class='bx bx-cart-alt'></i>
+            </div>
+   
+            <div class="box">
+                <div class="box-img" id="item2">
+                    <img src="tropicalpizza.jpg" alt="">
+                </div>
+                <h2>Tropical Pizza</h2>
+                <h3><button onclick="addToCart('tropicalpizza.jpg', 'Tropical Pizza', 120)">Add to Cart</button></h3>
+                <span>Rs.120</span>
+                <i class='bx bx-cart-alt'></i> 
+            </div>
+
+            <div class="box">
+                <div class="box-img" id="item3">
+                    <img src="mecaroni.jpg" alt="">
+                </div>
+                <h2>Mecaroni Pizza</h2>
+                <h3><button onclick="addToCart('mecaroni.jpg', 'Mecaroni Pizza', 110)">Add to Cart</button></h3>
+                <span>Rs.110</span>
+                <i class='bx bx-cart-alt'></i>
+            </div>
+             
+            
+            <div class="box">
+                <div class="box-img" id="item1">
+                    <img src="pizza11.jpg" alt="">
+                </div>
+                <h2>Veggie Pizza</h2>
+                <h3><button onclick="addToCart('pizza11.jpg', 'Veggie Pizza', 100)">Add to Cart</button></h3>
+                <span>Rs.100</span>
+                <i class='bx bx-cart-alt'></i>
+            </div>
+            <div class="box">
+                <div class="box-img" id="item2">
+                    <img src="paneer pizza.webp" alt="">
+                </div>
+                <h2>Paneer Pizza</h2>
+                <h3><button onclick="addToCart('paneer pizza.webp', 'Paneer Pizza', 120)">Add to Cart</button></h3>
+                <span>Rs.120</span>
+                <i class='bx bx-cart-alt'></i> 
+            </div>
+            <div class="box">
+                <div class="box-img" id="item3">
+                    <img src="corn.jpg" alt="">
+                </div>
+                <h2>Corn Pizza</h2>
+                <h3><button onclick="addToCart('corn.jpg', 'Corn Pizza', 110)">Add to Cart</button></h3>
+                <span>Rs.110</span>
+                <i class='bx bx-cart-alt'></i>
+            </div>
+
+            <div class="box">
+                <div class="box-img" id="item1">
+                    <img src="jalapenos pizza.jpg" alt="">
+                </div>
+                <h2>Jalapenos Pizza</h2>
+                <h3><button onclick="addToCart('jalapenos pizza.jpg', 'Jalapenos Pizza', 110)">Add to Cart</button></h3>
+                <span>Rs.100</span>
+                <i class='bx bx-cart-alt'></i>
+            </div>
+            <div class="box">
+                <div class="box-img" id="item2">
+                    <img src="capsicum.webp" alt="">
+                </div>
+                <h2>Capsicum Pizza</h2>
+                <h3><button onclick="addToCart('image.png', 'Capsicum Pizza', 110)">Add to Cart</button></h3>
+                <span>Rs.120</span>
+                <i class='bx bx-cart-alt'></i> 
+            </div>
+
+            <div class="box">
+                <div class="box-img" id="item3">
+                    <img src="mushroom pizza.jpg" alt="">
+                </div>
+                <h2>Mushroom Pizza</h2>
+                <h3><button onclick="addToCart('mashroom pizza.jpg', 'Mushroom Pizza', 130)">Add to Cart</button></h3>
+                <span>Rs.110</span>
+                <i class='bx bx-cart-alt'></i>
+            </div>
+
+            <div class="box">
+                <div class="box-img" id="item3">
+                    <img src="pizza4.jpg" alt="">
+                </div>
+                <h2>Tomato Pizza</h2>
+                <h3><button onclick="addToCart('pizza4.jpg', 'Tomato Pizza', 100)">Add to Cart</button></h3>
+                <span>Rs.110</span>
+                <i class='bx bx-cart-alt'></i>
+            </div>
+             
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="heading">
+            <span>Services</span>
+            <h2>We provide best food services</h2>
+        </div>
+
+        <div class="servives-container">
+
+            <div class="s-box">
+                <img src="https://images.pexels.com/photos/280453/pexels-photo-280453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500.png" alt="">
+                <h3>You Order</h3>
+                <p>Ordering your favorite pizza is a breeze with our user-friendly platform.With just a few clicks, your order is on its way to being freshly prepared and delivered straight to your door, ready to satisfy your cravings.</p>
+            </div>
+
+            <div class="s-box">
+                <img src="https://images.pexels.com/photos/4391470/pexels-photo-4391470.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500.png" alt="">
+                <h3>Shipping</h3>
+                <p>Elevate your pizza experience with our reliable shipping service. We ensure your favorite flavors are delivered fresh and fast, straight to your door. Whether you're near or far, savor the convenience of nationwide shipping and indulge in our delicious pizzas wherever you are.</p>
+            </div>
+
+            <div class="s-box">
+                <img src="https://images.pexels.com/photos/4393426/pexels-photo-4393426.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500.png" alt="">
+                <h3>Delivered</h3>
+                <p>Freshly prepared and promptly delivered, our pizzas arrive at your doorstep bursting with flavor and satisfaction. Enjoy the convenience of our efficient delivery service, ensuring your cravings are swiftly met, leaving you nothing but delicious memories.</p>
+            </div>
+            
+            
+        </div>
+    </section>
+
+    <section class="feedback" id="feedback">
+        
+        <div class="feedback-text">
+            <span>Feedback</span>
+            <h2>We'd love to hear from you</h2>
+        </div>
+        <div class="feedback-form">
+            <form action="submit_feedback.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+    
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </div>
+        <div class="feedback-title">
+            <h2>Our Happy Customers</h2>
+        </div>
+        <div class="feedback-feedback">
+            <div class="feedback-item">
+                <img src="yash.jpg" alt="Person 1">
+                <h3>Feedback 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam magna eu odio tincidunt, sed elementum magna varius.</p>
+            </div>
+            <div class="feedback-item">
+                <img src="person2.jpg" alt="Person 2">
+                <h3>Feedback 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam magna eu odio tincidunt, sed elementum magna varius.</p>
+            </div>
+        </div>
+        <div class="feedback-feedback">
+            <div class="feedback-item">
+                <img src="sakshi.jpg" alt="Person 3">
+                <h3>Feedback 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam magna eu odio tincidunt, sed elementum magna varius.</p>
+            </div>
+            <div class="feedback-item">
+                <img src="person4.jpg" alt="Person 4">
+                <h3>Feedback 4</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam magna eu odio tincidunt, sed elementum magna varius.</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="connect">
+        <div class="connect-text">
+            <span>Let's Talk</span>
+            <h2>Connect now</h2>
+        </div>
+        <a href="#" class="btn">Contact Us</a>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-box">
+            <h3>Pizza&nbsp;<i class="fas fa-pizza-slice"></i>&nbsp;Zone</h3>
+            <span>Connect With Us</span>
+            <div class="social">
+                <a href="#"><i class='bx bxl-facebook' ></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+            </div>
+        </div>
+        <div class="contact-box">
+            <h3>Menu Links</h3>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </div>
+        <div class="contact-box">
+            <h3>Quick Links</h3>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#Privacy Policy">Privacy Policy</a></li>
+            <li><a href="#Disclaimer">Disclaimer</a></li>
+            <li><a href="#Terms Of Use">Terms Of Use</a></li>
+        </div>
+        <div class="contact-box address">
+            <h3>Contact</h3>
+            <i class='bx bxs-map' ><span>Akurdi , Pune ,  India</span></i>
+            <i class='bx bxs-phone' ><span>+91 8983589930</span></i>
+            <i class='bx bxs-envelope' ><span>pizzazone@gmail.com</span></i>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

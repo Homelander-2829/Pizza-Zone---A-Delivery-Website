@@ -1,0 +1,124 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    margin-bottom: 20px; /* Adjusted margin */
+    font-size: 36px; /* Increased font size */
+}
+
+.payment-container {
+    width: 80%;
+    max-width: 600px; /* Increased max-width */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px; /* Adjusted margin */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    background-color: #3e8e41;
+}
+
+#card-details,
+#upi-details {
+    display: none;
+}
+
+#payment-method {
+    margin-bottom: 15px;
+}
+
+#total-amount-display {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#card-details,
+#upi-details {
+    margin-top: 15px;
+}
+
+#card-details label,
+#upi-details label {
+    color: #555;
+}
+
+#card-details input[type="text"],
+#upi-details input[type="text"] {
+    margin-top: 5px;
+}
+
+#card-details input[type="text"] {
+    width: calc(50% - 5px);
+}
+
+#upi-details input[type="text"] {
+    width: 100%; 
+}
+
+#payment-method {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+#payment-method option {
+    background-color: #fff;
+}
+.fa-pizza-slice {
+    color: #ff9800; 
+    margin-right: 5px;
+}
